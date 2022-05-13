@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Amarante';
+        }
+        body{
+            background-color: black;
+        }
+        .login-form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 3px white solid;
+            height: 40vh;
+            width: 30%;
+            border-radius: 30px;
+            background: gray;
+        }
+        .input-box{
+            border: white 2px solid;
+            margin:6% 15%;
+            height: 35px;
+            width:280px;
+            border-radius:20px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+        }
+        .input-box:hover{
+            color: black;
+            border: black;
+            background-color: white;
+        }
+        .input-box:focus{
+            color: black;
+            border: black;
+            background-color: white;
+        }
+        .submit-btn{
+            width: 80px;
+            text-align: center;
+            height: 30px;
+            border: white 3px solid;
+            margin-top: 2%;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-color: black;
+            color: white;
+            transition-duration: 3s;
+        }
+        .submit-btn:hover{
+            transform: rotateZ(360deg);
+        }
+        .heading{
+            color: gray;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 class="heading">Login-Form</h1></center>
+    <div class="login-form">
+        <form action="#">
+            <br>
+            <input type="text" name="id" placeholder="Username" class="input-box" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" class="input-box" required>
+            <br>
+            <center><input type="input" value="Login" class="submit-btn"></center>
+        </form>
+    </div>
+</body>
+</html>
